@@ -1,0 +1,586 @@
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\bin\Debug\SV_Client.exe.config
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\bin\Debug\SV_Client.exe
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\bin\Debug\SV_Client.pdb
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\SV_Client.csprojResolveAssemblyReference.cache
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\MainWindow.baml
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\MainWindow.g.cs
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.g.cs
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.g.cs
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.g.cs
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\App.g.cs
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.cache
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.lref
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.baml
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.baml
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.baml
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\SV_Client.g.resources
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\SV_Client.Properties.Resources.resources
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\SV_Client.csproj.GenerateResource.Cache
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\SV_Client.exe
+c:\users\exa\documents\visual studio 2013\Projects\SV_Client\SV_Client\obj\Debug\SV_Client.pdb
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\SV_Client.exe.config
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\SV_Client.exe
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\SV_Client.pdb
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.csprojResolveAssemblyReference.cache
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\MainWindow.baml
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\MainWindow.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\App.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.cache
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.lref
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.baml
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.baml
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.baml
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.g.resources
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.Properties.Resources.resources
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.csproj.GenerateResource.Cache
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.exe
+C:\Users\Exa\Desktop\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.pdb
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\SV_Client.exe.config
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.exe
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.pdb
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\SV_Client.exe.config
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\SV_Client.exe
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\SV_Client.pdb
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\MainWindow.baml
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\MainWindow.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\App.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.cache
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.lref
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.baml
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.baml
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.baml
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.g.resources
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.Properties.Resources.resources
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.csproj.GenerateResource.Cache
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.exe
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.pdb
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.csprojResolveAssemblyReference.cache
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\Microsoft.Expression.Interactions.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\System.Windows.Interactivity.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\de\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\en\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\es\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\it\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\SV_Client.exe.config
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.csprojResolveAssemblyReference.cache
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\MainWindow.baml
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\MainWindow.g.cs
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.g.cs
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.g.cs
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.g.cs
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\App.g.cs
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.cache
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.lref
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\SV_Client.exe
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\SV_Client.pdb
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\Microsoft.Expression.Interactions.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\System.Windows.Interactivity.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\de\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\en\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\es\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\it\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.baml
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.baml
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.baml
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.g.resources
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.Properties.Resources.resources
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.csproj.GenerateResource.Cache
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.exe
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.pdb
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\TEMP_LOGO.baml
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\TEMP_LOGO.g.cs
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Gamefield.baml
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Gamefield.g.cs
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS1.baml
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS2.baml
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS3.baml
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS4.baml
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS1.g.cs
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS2.g.cs
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS3.g.cs
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS4.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\SV_Client.exe
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\SV_Client.pdb
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.csprojResolveAssemblyReference.cache
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Gamefield.baml
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS1.baml
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS2.baml
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS3.baml
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS4.baml
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\TEMP_LOGO.baml
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\MainWindow.baml
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Gamefield.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS1.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS2.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS3.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS4.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\TEMP_LOGO.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\MainWindow.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\App.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.cache
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.lref
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.baml
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.baml
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.baml
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.g.resources
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.Properties.Resources.resources
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.csproj.GenerateResource.Cache
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS1.baml
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS2.baml
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS3.baml
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS4.baml
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Hit.baml
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Miss.baml
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS1.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS2.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS3.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS4.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Hit.g.cs
+C:\Users\Exa\Desktop\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Miss.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS1.baml
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS2.baml
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS3.baml
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS4.baml
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Gamefield.baml
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Hit.baml
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Miss.baml
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS1.baml
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS2.baml
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS3.baml
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS4.baml
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\TEMP_LOGO.baml
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS1.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS2.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS3.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS4.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Gamefield.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Hit.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Miss.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS1.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS2.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS3.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS4.g.cs
+E:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\TEMP_LOGO.g.cs
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS1.baml
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS2.baml
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS3.baml
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS4.baml
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Hit.baml
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Miss.baml
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS1.g.cs
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS2.g.cs
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS3.g.cs
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS4.g.cs
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Hit.g.cs
+I:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Miss.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\SV_Client.exe.config
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.exe
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.pdb
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\SV_Client.exe
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\SV_Client.pdb
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\System.Windows.Interactivity.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.csprojResolveAssemblyReference.cache
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS1.baml
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS2.baml
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS3.baml
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS4.baml
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Gamefield.baml
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Hit.baml
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Miss.baml
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS1.baml
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS2.baml
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS3.baml
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS4.baml
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\TEMP_LOGO.baml
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\MainWindow.baml
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS1.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS2.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS3.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS4.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Gamefield.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Hit.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\Miss.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS1.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS2.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS3.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\ShipS4.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\Graphic\TEMP_LOGO.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\MainWindow.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\App.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.cache
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.lref
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.baml
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.baml
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.baml
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.g.resources
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.Properties.Resources.resources
+D:\Schiffe versenken\PRG\SV_Client\SV_Client\obj\Debug\SV_Client.csproj.GenerateResource.Cache
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\SV_Client.exe.config
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.exe
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.pdb
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\SV_Client.exe
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\SV_Client.pdb
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\System.Windows.Interactivity.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.csprojResolveAssemblyReference.cache
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS1.baml
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS2.baml
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS3.baml
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS4.baml
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Gamefield.baml
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Hit.baml
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Miss.baml
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS1.baml
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS2.baml
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS3.baml
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS4.baml
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\TEMP_LOGO.baml
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\MainWindow.baml
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS1.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS2.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS3.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS4.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Gamefield.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Hit.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Miss.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS1.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS2.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS3.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS4.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\TEMP_LOGO.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\MainWindow.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\App.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.cache
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.lref
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.baml
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.baml
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.baml
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.g.resources
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.Properties.Resources.resources
+D:\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.csproj.GenerateResource.Cache
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\SV_Client.exe.config
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.exe
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.pdb
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\SV_Client.exe
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\SV_Client.pdb
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\Microsoft.Expression.Interactions.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\System.Windows.Interactivity.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\de\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\en\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\es\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\it\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.csprojResolveAssemblyReference.cache
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS1.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS2.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS3.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS4.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Gamefield.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Hit.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Miss.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS1.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS2.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS3.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS4.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\TEMP_LOGO.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\MainWindow.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS1.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS2.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS3.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS4.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Gamefield.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Hit.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Miss.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS1.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS2.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS3.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS4.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\TEMP_LOGO.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\MainWindow.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\App.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.cache
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.lref
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.g.resources
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.Properties.Resources.resources
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.csproj.GenerateResource.Cache
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\SV_Client.exe.config
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.exe
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.pdb
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\SV_Client.exe
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\SV_Client.pdb
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.csprojResolveAssemblyReference.cache
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS1.baml
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS2.baml
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS3.baml
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS4.baml
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Gamefield.baml
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Hit.baml
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Miss.baml
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS1.baml
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS2.baml
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS3.baml
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS4.baml
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\TEMP_LOGO.baml
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\MainWindow.baml
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS1.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS2.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS3.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS4.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Gamefield.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Hit.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Miss.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS1.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS2.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS3.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS4.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\TEMP_LOGO.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\MainWindow.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\App.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.cache
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.lref
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.baml
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.baml
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.baml
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.g.resources
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.Properties.Resources.resources
+C:\Users\Exa\Desktop\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.csproj.GenerateResource.Cache
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\SV_Client.exe.config
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.exe
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.pdb
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Dialog\StartGameInputWindow.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Dialog\StartGameInputWindow.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\SV_Client.exe
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\SV_Client.pdb
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\Microsoft.Expression.Interactions.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\System.Windows.Interactivity.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\de\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\en\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\es\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\it\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.csprojResolveAssemblyReference.cache
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Dialog\StartGameInputWindow.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS1.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS2.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS3.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS4.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Gamefield.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Hit.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Miss.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS1.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS2.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS3.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS4.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\TEMP_LOGO.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\MainWindow.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Dialog\StartGameInputWindow.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS1.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS2.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS3.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\EnemyShipS4.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Gamefield.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Hit.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\Miss.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS1.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS2.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS3.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\ShipS4.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Graphic\TEMP_LOGO.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\MainWindow.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\App.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.cache
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client_MarkupCompile.lref
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_GameInterface.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_MainInterface.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_StartInterface.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.g.resources
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.Properties.Resources.resources
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\SV_Client.csproj.GenerateResource.Cache
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_LoginInterface.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_LoginInterface.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_LoginInterface.g.cs
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_LoginInterface.baml

@@ -1,0 +1,146 @@
+﻿<UserControl x:Class="SV_Client.UserControls.uc_GameInterface"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Interaction="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"  
+             xmlns:ViewModel="clr-namespace:SV_Client.ViewModels"
+             xmlns:Graphic="clr-namespace:SV_Client.Graphic"
+             mc:Ignorable="d" 
+             d:DesignHeight="460" d:DesignWidth="640" SizeChanged="F_ScaleInfoUpdate" >
+    <UserControl.DataContext>
+        <ViewModel:vm_GameInterface></ViewModel:vm_GameInterface>
+    </UserControl.DataContext>
+    <Interaction:Interaction.Triggers>
+        <Interaction:EventTrigger EventName="SizeChanged">
+            <Interaction:InvokeCommandAction Command="{Binding pu_SizeChangeCommand}"></Interaction:InvokeCommandAction>
+        </Interaction:EventTrigger>
+        
+        <Interaction:EventTrigger EventName="Loaded">
+            <Interaction:InvokeCommandAction Command="{Binding pu_LoadedSizeCommand}"></Interaction:InvokeCommandAction>
+        </Interaction:EventTrigger>
+    </Interaction:Interaction.Triggers>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.99168399168399*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Column="0" PreviewMouseLeftButtonDown="ViewList_PreviewMouseLeftButtonDown" PreviewMouseMove="ViewList_PreviewMouseMove">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                
+                <Canvas Name="ShipS4" Grid.Row="0">
+                    <Canvas.LayoutTransform>
+                        <ScaleTransform ScaleX="{Binding pu_ScaleWidth}" ScaleY="{Binding pu_ScaleHeight}"></ScaleTransform>
+                    </Canvas.LayoutTransform>
+                    <Graphic:ShipS4>
+                    </Graphic:ShipS4>
+                </Canvas>
+
+                <Canvas Name="ShipS3" Grid.Row="1">
+                    <Canvas.LayoutTransform>
+                        <ScaleTransform ScaleX="{Binding pu_ScaleWidth}" ScaleY="{Binding pu_ScaleHeight}"></ScaleTransform>
+                    </Canvas.LayoutTransform>
+                    <Graphic:ShipS3>
+                    </Graphic:ShipS3>
+                </Canvas>
+
+                <Canvas Name="ShipS2" Grid.Row="2">
+                    <Canvas.LayoutTransform>
+                        <ScaleTransform ScaleX="{Binding pu_ScaleWidth}" ScaleY="{Binding pu_ScaleHeight}"></ScaleTransform>
+                    </Canvas.LayoutTransform>
+                    <Graphic:ShipS2>
+                    </Graphic:ShipS2>
+                </Canvas>
+
+                <Canvas Name="ShipS1" Grid.Row="3">
+                    <Canvas.LayoutTransform>
+                        <ScaleTransform ScaleX="{Binding pu_ScaleWidth}" ScaleY="{Binding pu_ScaleHeight}"></ScaleTransform>
+                    </Canvas.LayoutTransform>
+                    <Graphic:ShipS1>
+                    </Graphic:ShipS1>
+                </Canvas>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Button Margin="30,20,30,20" Grid.Row="0" Content="Ready" FontFamily="SketchFlow Print" FontSize="14" Click="ReadyClick"></Button>
+                <Button Margin="20,20,20,20" Grid.Row="1" Content="Surrender" Command="{Binding pu_SurrenderCommand}" FontFamily="SketchFlow Print" FontSize="16"></Button>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" HorizontalContentAlignment="Center" Content="Eigenes Spielfeld"></Label>
+                    <Label Grid.Column="1" HorizontalContentAlignment="Center" Content="{Binding pu_OwnUsername, Mode=OneTime}" ></Label>
+                    <Label Grid.Column="2" HorizontalContentAlignment="Center" Content="{Binding pu_OwnShipsRemaining, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" ></Label>
+                </Grid>
+                
+                <Canvas Name="UpperGameField" Grid.Row="1" DragEnter="OwnGameField_DragEnter" Drop="OwnGameField_Drop"  AllowDrop="True" Background="White" PreviewMouseLeftButtonDown="GameField_PreviewMouseLeftButtonDown" PreviewMouseMove="GameField_PreviewMouseMove" DragOver="OwnGameField_DragOver">
+                    <Canvas.LayoutTransform>
+                        <ScaleTransform ScaleX="{Binding pu_ScaleWidth}" ScaleY="{Binding pu_ScaleHeight}"></ScaleTransform>
+                    </Canvas.LayoutTransform>
+                    <Graphic:Gamefield Margin="0,0,2,2">
+                    </Graphic:Gamefield>
+                </Canvas>
+                
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" HorizontalContentAlignment="Center" Content="Gegner Spielfeld" ></Label>
+                    <Label Grid.Column="1" HorizontalContentAlignment="Center" Content="{Binding pu_OpponentUsername, Mode=OneTime}" ></Label>
+                    <Label Grid.Column="2" HorizontalContentAlignment="Center" Content="{Binding pu_OpponentShipsRemaining, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" ></Label>
+                </Grid>
+
+                <Canvas Name="LowerGameField" Grid.Row="1" Background="White" PreviewMouseLeftButtonDown="OpponentGamefieldAttack">
+                    <Canvas.LayoutTransform>
+                        <ScaleTransform ScaleX="{Binding pu_ScaleWidth}" ScaleY="{Binding pu_ScaleHeight}"></ScaleTransform>
+                    </Canvas.LayoutTransform>
+                    <Graphic:Gamefield Margin="0,0,2,2">
+                    </Graphic:Gamefield>
+                </Canvas>
+                
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

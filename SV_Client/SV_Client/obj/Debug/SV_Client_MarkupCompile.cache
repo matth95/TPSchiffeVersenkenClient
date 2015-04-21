@@ -1,0 +1,20 @@
+﻿SV_Client
+
+
+winexe
+C#
+.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\
+SV_Client
+none
+false
+DEBUG;TRACE
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\App.xaml
+18-354076441
+
+46-154354699
+14-718311698
+Dialog\StartGameInputWindow.xaml;Graphic\EnemyShipS1.xaml;Graphic\EnemyShipS2.xaml;Graphic\EnemyShipS3.xaml;Graphic\EnemyShipS4.xaml;Graphic\Gamefield.xaml;Graphic\Hit.xaml;Graphic\Miss.xaml;Graphic\ShipS1.xaml;Graphic\ShipS2.xaml;Graphic\ShipS3.xaml;Graphic\ShipS4.xaml;Graphic\TEMP_LOGO.xaml;MainWindow.xaml;UserControls\uc_GameInterface.xaml;UserControls\uc_LoginInterface.xaml;UserControls\uc_MainInterface.xaml;UserControls\uc_StartInterface.xaml;
+
+False
+

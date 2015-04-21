@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="SV_Client.UserControls.uc_LoginInterface"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:ViewModel="clr-namespace:SV_Client.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignHeight="460" d:DesignWidth="640">
+    <UserControl.DataContext>
+        <ViewModel:vm_LoginInterface></ViewModel:vm_LoginInterface>
+    </UserControl.DataContext>
+    <Grid Margin="100,100,100,100">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="0" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="5*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Label Grid.Column="0" Content="Username:"></Label>
+            <TextBox Grid.Column="1" Text="{Binding pu_InputUsername}"></TextBox>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="5*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Content="Password:"></Label>
+            <TextBox Grid.Column="1" Text="{Binding pu_InputPassword}"></TextBox>
+        </Grid>
+        
+        <Grid Grid.Row="2" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Margin="5" Content="Login" Command="{Binding pu_LoginCommand}"></Button>
+            <Button Grid.Column="1" Margin="5" Content="Register" Command="{Binding pu_RegisterCommand}"></Button>
+        </Grid>
+    </Grid>
+</UserControl>

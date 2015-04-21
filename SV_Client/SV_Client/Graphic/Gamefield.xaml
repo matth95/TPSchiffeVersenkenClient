@@ -1,0 +1,195 @@
+﻿<UserControl x:Class="SV_Client.Graphic.Gamefield"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="960">
+    <Grid>
+        <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+            <Canvas Name="svg2" Width="960.00001" Height="400.00001">
+                <Canvas.RenderTransform>
+                    <TranslateTransform X="0" Y="0"/>
+                </Canvas.RenderTransform>
+                <Canvas.Resources/>
+                <!--Unknown tag: sodipodi:namedview-->
+                <!--Unknown tag: metadata-->
+                <Canvas Name="layer1">
+                    <Canvas.RenderTransform>
+                        <TranslateTransform X="0" Y="-652.36216"/>
+                    </Canvas.RenderTransform>
+                    <Canvas Name="g3919">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="0.50446434" Y="652.8644"/>
+                        </Canvas.RenderTransform>
+                        <Canvas Name="g3921">
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3923" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 40 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3925" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 80 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3927" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 120 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3929" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 160 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3931" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 200 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3933" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 240 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3935" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 280 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3937" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 320 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3939" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 360 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3941" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 400 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3943" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 440 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3945" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 480 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3947" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 520 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3949" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 560 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3951" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 600 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3953" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 640 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3955" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 680 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3957" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 720 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3959" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 760 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3961" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 800 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3963" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 840 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3965" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 880 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3967" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 920 0 0 400" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                        <Canvas Name="g3969">
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3971" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 0 40 960 0" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3973" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 0 80 960 0" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3975" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 0 120 960 0" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3977" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 0 160 960 0" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3979" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 0 200 960 0" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3981" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 0 240 960 0" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3983" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 0 280 960 0" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3985" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 0 320 960 0" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3987" StrokeThickness="1" Stroke="#FF000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 0 360 960 0" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="0" Canvas.Top="0" Width="960" Height="400" Name="rect3989" StrokeThickness="1" Stroke="#FF000000"/>
+                    </Canvas>
+                </Canvas>
+            </Canvas>
+        </Viewbox>
+    </Grid>
+</UserControl>

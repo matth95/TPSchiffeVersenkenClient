@@ -1,4 +1,6 @@
 ﻿using SV_Client.Classes;
+using SV_Client.Classes.Commands;
+using SV_Client.Classes.ProgramLogic;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,7 +51,8 @@ namespace SV_Client.UserControls
         private double pr_ScaleHeight;
         private List<Field> pr_OwnGameFields;
         private List<Field> pr_OpponentGameFields;
-        private List<TestShip> pr_ShipList;
+        private GameShipList pr_ShipList;
+        private LogicShipList pr_LogicShipList;
 
         private TcpClient pr_TCPServerStation;
         private int pr_TCPServerPort;
@@ -75,7 +78,8 @@ namespace SV_Client.UserControls
 
             pr_OwnGameFields = new List<Field>(240);
             pr_OpponentGameFields = new List<Field>(240);
-            pr_ShipList = new List<TestShip>();
+            pr_ShipList = new GameShipList();
+            pr_LogicShipList = new LogicShipList();
             F_InitializeFields();
 
             pr_TCPServerPort = 50000;
@@ -90,7 +94,7 @@ namespace SV_Client.UserControls
             BackgroundWorker ReceiveDataWorker = new BackgroundWorker();
             ReceiveDataWorker.DoWork += F_ReceiveDataFromServer;
             ReceiveDataWorker.RunWorkerAsync();
-
+            
             InitializeComponent();
         }
 
@@ -117,11 +121,11 @@ namespace SV_Client.UserControls
             var DataToInterpretSplitted = DataToInterpret.Split(new[] { "\n\n" }, StringSplitOptions.None);
             string DataToInterpretHeader = DataToInterpretSplitted[0];
 
-            if (DataToInterpretHeader.Split('\n')[0].IndexOf("START [PLAYERNAME]") > 0)
+            if (DataToInterpretHeader.Split('\n')[0].IndexOf("START") > 0)
             {
-                // ibrprüfung ob spiel startet mit spieler der erstn zug mocht
-                string StartingPlayer = ""; // angegebenes feld
-                if( StartingPlayer == SV_Client.Classes.Client.GeneralInfo.pu_Username )
+                var Parameters = DataToInterpretSplitted[0].Split(null); 
+
+                if( Parameters[1].Equals(SV_Client.Classes.Client.GeneralInfo.pu_Username) )
                 {
                     pr_IsItMyTurn = true;
                 }
@@ -138,9 +142,11 @@ namespace SV_Client.UserControls
             {
                 pr_AttackHitMiss = true;
             }
-            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("ATTACK ON [FIELD]") > 0)
+            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("ATTACK ON") > 0)
             {
-                int FieldIndex = 0; // angegebenes feld
+                var Parameters = DataToInterpretSplitted[0].Split(null); 
+                int FieldIndex = Convert.ToInt16(Parameters[2]);
+
                 F_PlaceAttackOn(FieldIndex, new Graphic.Hit(), pr_OwnCanvas, pr_OwnGameFields);
             }
             else if (DataToInterpretHeader.Split('\n')[0].IndexOf("END WIN") > 0)
@@ -253,7 +259,21 @@ namespace SV_Client.UserControls
 
             Rectangle mRect = F_getCopyOfOriginal((pr_OriginalElement as Rectangle));
 
-            F_PlaceShipOn(F_CheckField(mDropPoint.X, mDropPoint.Y, pr_OwnGameFields), mRect, (sender as Canvas), pr_OwnGameFields);
+            int[] XYCoordinates = F_CheckFieldForXY(mDropPoint.X, mDropPoint.Y, pr_OwnGameFields);
+
+            if (   (XYCoordinates[0] != 24 && XYCoordinates[1] != 10)
+                || (XYCoordinates[0] == 24 && pr_DirectionChange == true) 
+                || (XYCoordinates[0] == 24 && pr_ModifiedShipDirection == true)
+                || (XYCoordinates[1] == 10 && pr_DirectionChange == false)
+                || (XYCoordinates[1] == 10 && pr_ModifiedShipDirection == false))
+            {
+                F_PlaceShipOn(F_CheckField(mDropPoint.X, mDropPoint.Y, pr_OwnGameFields), mRect, (sender as Canvas), pr_OwnGameFields, XYCoordinates);
+            }
+            else
+            {
+                MessageBox.Show("Sie können das Schiff nicht außerhalb des Spielfeldes plazieren!");
+            }
+            
             pr_DirectionChange = false;
             pr_ModifyShip = false;
             pr_RightClickLimiter = false;
@@ -270,7 +290,7 @@ namespace SV_Client.UserControls
                 pr_StartPoint = e.GetPosition(null);
                 pr_OriginalElement = (UIElement)e.Source;
                 (sender as Canvas).Children.Remove((UIElement)e.Source);
-                int ShipSize = pr_ShipList[F_getShipIndex((UIElement)e.Source)].pr_ShipSize;
+                int ShipSize = pr_ShipList.Ships[F_getShipIndex((UIElement)e.Source)].pr_ShipSize;
 
                 if (ShipSize == 4)
                 {
@@ -299,7 +319,10 @@ namespace SV_Client.UserControls
 
                 }
 
-                pr_ShipList.RemoveAt(F_getShipIndex((UIElement)e.Source));
+                int IndexToRemove = F_getShipIndex((UIElement)e.Source);
+
+                pr_ShipList.Ships.RemoveAt(IndexToRemove);
+                pr_LogicShipList.Ships.RemoveAt(IndexToRemove);
                 pr_ModifiedShipDirection = F_getShipDirection(pr_OriginalElement);
                 pr_ModifyShip = true;
             }
@@ -352,10 +375,7 @@ namespace SV_Client.UserControls
                 pr_OwnCanvas.IsEnabled = false;
                 (sender as Button).IsEnabled = false;
 
-                for( var lauf = 0 ; lauf < pr_ShipList.Count ; lauf++)
-                {
-                    F_SendDataToServer("PUT SHIP\n\n" + XmlSerializer.Serialize<TestShip>(pr_ShipList[lauf]));
-                }
+                F_SendDataToServer("PUT SHIPS\n\n" + XmlSerializer.Serialize<LogicShipList>(pr_LogicShipList));
             }
             else
             {
@@ -496,7 +516,32 @@ namespace SV_Client.UserControls
             return -1;
         }
 
-        private void F_PlaceShipOn(int FieldIndex, UIElement Ship, Canvas BattleField, List<Field> GameField)
+        private int[] F_CheckFieldForXY(double X, double Y, List<Field> GameField)
+        {
+            int[] XandY = new int[2];
+            XandY[0] = 0;
+            XandY[1] = 0;
+
+            for (var lauf = 0; lauf < 10; lauf++)
+            {
+                XandY[1]++;
+                int x = 0;
+                for (var lauf2 = (24 * lauf); lauf2 < (24 * (lauf + 1)); lauf2++)
+                {
+                    x++;
+                    if ((GameField.ElementAt(lauf2).pu_LowerXBarrier < X && GameField.ElementAt(lauf2).pu_UpperXBarrier > X) &&
+                        (GameField.ElementAt(lauf2).pu_LowerYBarrier < Y && GameField.ElementAt(lauf2).pu_UpperYBarrier > Y))
+                    {
+                        XandY[0] = x;
+                        return XandY;
+                    }
+                }
+            }
+
+            return new int[0];
+        }
+
+        private void F_PlaceShipOn(int FieldIndex, UIElement Ship, Canvas BattleField, List<Field> GameField, int[] XandY)
         {
             if( pr_ModifyShip == true )
             {
@@ -565,7 +610,8 @@ namespace SV_Client.UserControls
                         }
                     }
 
-                    pr_ShipList.Add(new TestShip(FieldIndex, pr_DirectionChange, ShipSize, Ship));
+                    pr_ShipList.Ships.Add(new MShip(FieldIndex, pr_DirectionChange, ShipSize, Ship));
+                    pr_LogicShipList.Ships.Add(new Ship(ShipSize, XandY[0], XandY[1], !pr_DirectionChange)); // net sicho wegn richtung
                 }
                 else
                 {
@@ -637,7 +683,8 @@ namespace SV_Client.UserControls
                         }
                     }
 
-                    pr_ShipList.Add(new TestShip(FieldIndex, pr_DirectionChange, ShipSize, Ship));
+                    pr_ShipList.Ships.Add(new MShip(FieldIndex, pr_DirectionChange, ShipSize, Ship));
+                    pr_LogicShipList.Ships.Add(new Ship(ShipSize, XandY[0], XandY[1], !pr_DirectionChange));
                 }
                 else
                 {
@@ -783,9 +830,9 @@ namespace SV_Client.UserControls
 
         private int F_getShipIndex(UIElement Ship)
         {
-            for( var lauf = 0 ; lauf < pr_ShipList.Count ; lauf++ )
+            for( var lauf = 0 ; lauf < pr_ShipList.Ships.Count ; lauf++ )
             {
-                if( pr_ShipList[lauf].pr_Element == Ship )
+                if( pr_ShipList.Ships[lauf].pr_Element == Ship )
                 {
                     return lauf;
                 }

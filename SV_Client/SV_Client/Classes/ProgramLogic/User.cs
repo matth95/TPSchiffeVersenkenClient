@@ -29,15 +29,15 @@ namespace SV_Client.Classes.ProgramLogic
         {
             Username = username;
             Password = password;
-            PlayField=new PlayField.PlayField(sizeX,sizeY);
-            EnemyPlayField=new EnemyPlayField(sizeX,sizeY);
+            //PlayField=new PlayField.PlayField(sizeX,sizeY);
+            //EnemyPlayField=new EnemyPlayField(sizeX,sizeY);
 
         }
         public User()
         {
             
         }
-
+        /*
         public PlayField.PlayField PlayField
         {
             get { return _playField; }
@@ -48,7 +48,7 @@ namespace SV_Client.Classes.ProgramLogic
         {
             get { return _enemyPlayField; }
             set { _enemyPlayField = value; }
-        }
+        }*/
 
         public string Password
         {

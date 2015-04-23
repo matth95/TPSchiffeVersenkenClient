@@ -1,14 +1,17 @@
 ﻿using System.Collections.Generic;
+using System.Windows;
+using System.Xml.Serialization;
 
 namespace SV_Client.Classes.ProgramLogic
 {
+    [XmlType(AnonymousType = true)]
     public class Ship
     {
         private int _size;
 
         public CPoint Point { get; set; }
 
-        private List<CPoint> _pointsOfShip; 
+        private List<CPoint> _pointsOfShip;
 
         public bool Horizontal
         {
@@ -39,11 +42,24 @@ namespace SV_Client.Classes.ProgramLogic
 
         private bool _horizontal;
 
+        public Ship()
+        {
+
+        }
+
         public Ship(int size, bool horizontal=true)
         {
             _size = size;
-            Point = new CPoint {X = 0, Y = 0};
-            PointsOfShip=new List<CPoint>();
+            Point = new CPoint { X = 0, Y = 0 };
+            PointsOfShip = new List<CPoint>();
+            Horizontal = horizontal;
+        }
+
+        public Ship(int size, int x, int y, bool horizontal=true)
+        {
+            _size = size;
+            Point = new CPoint { X = x, Y = y };
+            PointsOfShip = new List<CPoint>();
             Horizontal = horizontal;
         }
     }

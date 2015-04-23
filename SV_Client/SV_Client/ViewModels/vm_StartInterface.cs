@@ -153,8 +153,6 @@ namespace SV_Client.ViewModels
             else
             {
             }
-
-            //ViewModels.vm_MainInterface.pu_ChangeGUICommand.Execute(source);
         }
 
         private void F_ShowRanking()
@@ -183,7 +181,15 @@ namespace SV_Client.ViewModels
 
             if(JoinTarget != null)
             {
-                MessageBox.Show(JoinTarget.Content.ToString());
+                User CurrentUser = new User(SV_Client.Classes.Client.GeneralInfo.pu_Username, SV_Client.Classes.Client.GeneralInfo.pu_Password);
+
+                Join OpenGame = new Join();
+                OpenGame.Game = JoinTarget.Content.ToString();
+                OpenGame.User2 = CurrentUser;
+                F_SendDataToServer("PUT JOIN\n\n" + XmlSerializer.Serialize<Join>(OpenGame));
+
+
+                ViewModels.vm_MainInterface.pu_ChangeGUICommand.Execute(this);
             }
             else
             {
@@ -243,6 +249,7 @@ namespace SV_Client.ViewModels
         {
             IPEndPoint ServerEndPoint = new IPEndPoint(pr_UDPServerEndpoint.Address, pr_UDPServerSendPort);
             var sendCode = Encoding.ASCII.GetBytes(DataToSend);
+            //TODO cgheck of connectedf
             pr_UDPServerSendingStation.Connect(ServerEndPoint);
             pr_UDPServerSendingStation.Send(sendCode, sendCode.Length);
         }
@@ -251,18 +258,16 @@ namespace SV_Client.ViewModels
         {
 
             pr_UDPServerReceivingStation = new UdpClient(pr_UDPServerReceivePort, AddressFamily.InterNetwork);
-            pr_UDPServerEndpoint = new IPEndPoint(IPAddress.Any, pr_UDPServerReceivePort);
-            SV_Client.Classes.Client.GeneralInfo.pu_ServerIP = pr_UDPServerEndpoint.Address;
+            pr_UDPServerEndpoint = new IPEndPoint(IPAddress.Any, 0);
+            
 
             while (true)
             {
                 var receivedData = pr_UDPServerReceivingStation.Receive(ref pr_UDPServerEndpoint);
+                SV_Client.Classes.Client.GeneralInfo.pu_ServerIP = pr_UDPServerEndpoint.Address;
                 string receivedDataString = Encoding.ASCII.GetString(receivedData);
-                Console.WriteLine(pr_UDPServerEndpoint.Address.ToString());
-                Console.WriteLine(receivedDataString);
                 F_InterpretDataFromServer(receivedDataString);
             }
-           
            
         }
 
@@ -271,11 +276,10 @@ namespace SV_Client.ViewModels
             var DataToInterpretSplitted = DataToInterpret.Split(new[] { "\n\n" }, StringSplitOptions.None);
             string DataToInterpretHeader = DataToInterpretSplitted[0];
 
-            //ONLINE
             if (DataToInterpretHeader.Split('\n')[0].IndexOf("ONLINE") > 0)
             {
                 F_getGameList();
-                //F_getPlayerList();
+                F_getPlayerList();
             }
             else if ( DataToInterpretHeader.Split('\n')[0].IndexOf("GAMELIST") > 0 )
             {
@@ -291,8 +295,6 @@ namespace SV_Client.ViewModels
                             pr_OpenGameList[lauf].Content = CurrentGameList.OpenGames[lauf].GameName;
                         }
                     }));
-
-                    F_getPlayerList();
                 }
                 catch (Exception ex)
                 {

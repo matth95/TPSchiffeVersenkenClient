@@ -60,20 +60,22 @@
     <Compile Include="Classes\Commands\GameList.cs" />
     <Compile Include="Classes\Commands\Invite.cs" />
     <Compile Include="Classes\Commands\Join.cs" />
+    <Compile Include="Classes\Commands\LogicShipList.cs" />
     <Compile Include="Classes\Commands\Login.cs" />
     <Compile Include="Classes\Commands\PlayerList.cs" />
     <Compile Include="Classes\Commands\Ranking.cs" />
+    <Compile Include="Classes\Commands\GameShipList.cs" />
     <Compile Include="Classes\Field.cs" />
     <Compile Include="Classes\ProgramLogic\Attack.cs" />
     <Compile Include="Classes\ProgramLogic\CPoint.cs" />
     <Compile Include="Classes\ProgramLogic\GameInformation.cs" />
+    <Compile Include="Classes\Commands\MShip.cs" />
     <Compile Include="Classes\ProgramLogic\PlayField\AbstractPlayField.cs" />
     <Compile Include="Classes\ProgramLogic\PlayField\EnemyPlayField.cs" />
     <Compile Include="Classes\ProgramLogic\PlayField\PlayField.cs" />
     <Compile Include="Classes\ProgramLogic\Ship.cs" />
     <Compile Include="Classes\ProgramLogic\User.cs" />
     <Compile Include="Classes\RelayCommand.cs" />
-    <Compile Include="Classes\TestShip.cs" />
     <Compile Include="Classes\XmlSerializer.cs" />
     <Compile Include="Dialog\StartGameInputWindow.xaml.cs">
       <DependentUpon>StartGameInputWindow.xaml</DependentUpon>
@@ -238,6 +240,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

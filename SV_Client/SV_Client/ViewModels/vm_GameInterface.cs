@@ -24,6 +24,8 @@ namespace SV_Client.ViewModels
         public static double pustat_ScaleWidth;
         public static double pustat_ScaleHeight;
 
+        public static int pustat_AmountsOfEnemyShips = 6;
+
         private double pr_ScaleWidth;
         public double pu_ScaleWidth
         {
@@ -62,13 +64,6 @@ namespace SV_Client.ViewModels
             set { pr_LoadedSizeCommand = value; }
         }
 
-        private RelayCommand pr_SurrenderCommand;
-        public RelayCommand pu_SurrenderCommand
-        {
-            get { return pr_SurrenderCommand; }
-            set { pr_SurrenderCommand = value; }
-        }
-
         private string pr_OwnUsername;
         public string pu_OwnUsername
         {
@@ -91,17 +86,6 @@ namespace SV_Client.ViewModels
             }
         }
 
-        private string pr_OwnShipsRemaining;
-        public string pu_OwnShipsRemaining
-        {
-            get { return pr_OwnShipsRemaining; }
-            set
-            {
-                pr_OwnShipsRemaining = value;
-                F_NotifyChanged("pu_OwnShipsRemaining");
-            }
-        }
-
         private string pr_OpponentShipsRemaining;
         public string pu_OpponentShipsRemaining
         {
@@ -119,26 +103,27 @@ namespace SV_Client.ViewModels
         {
             pr_SizeChangeCommand = new RelayCommand(param => F_ChangeUserControlSize());
             pr_LoadedSizeCommand = new RelayCommand(param => F_ChangeUserControlSize());
-            pr_SurrenderCommand = new RelayCommand(param => F_Surrender(this));
 
-
-            pr_OwnUsername = "Mein Username";
-            pr_OwnShipsRemaining = "Remaining Ships: ";
-            pr_OpponentUsername = "Gegner Username";
-            pr_OpponentShipsRemaining = "Remaining Ships: ";
+            pr_OwnUsername = SV_Client.Classes.Client.GeneralInfo.pu_Username;
+            pr_OpponentUsername = SV_Client.Classes.Client.GeneralInfo.pu_EnemyUsername;
+            pr_OpponentShipsRemaining = "Remaining Ships: " + pustat_AmountsOfEnemyShips;
         }
 
         // FUNCTIONS
 
+        /// <summary>
+        /// This function is called whenever the size of the window is changed.
+        /// It updates the scaling values for width and height.
+        /// </summary>
         public void F_ChangeUserControlSize()
         {
             pu_ScaleWidth = ViewModels.vm_MainInterface.pu_uc_GameContent.ActualWidth / pr_GameFieldRequiredWidth;
             pu_ScaleHeight = ViewModels.vm_MainInterface.pu_uc_GameContent.ActualHeight / pr_GameFieldRequiredHeight;
         }
 
-        private void F_Surrender(object source)
+        public void F_EnemyShipDestroyed()
         {
-            ViewModels.vm_MainInterface.pu_ChangeGUICommand.Execute(source);
+            pustat_AmountsOfEnemyShips--;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

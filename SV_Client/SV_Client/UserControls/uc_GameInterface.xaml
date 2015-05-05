@@ -78,7 +78,7 @@
                 </Grid.RowDefinitions>
 
                 <Button Margin="30,20,30,20" Grid.Row="0" Content="Ready" FontFamily="SketchFlow Print" FontSize="14" Click="ReadyClick"></Button>
-                <Button Margin="20,20,20,20" Grid.Row="1" Content="Surrender" Command="{Binding pu_SurrenderCommand}" FontFamily="SketchFlow Print" FontSize="16"></Button>
+                <Button Margin="20,20,20,20" Grid.Row="1" Content="Surrender" FontFamily="SketchFlow Print" FontSize="16" Click="SurrenderClick"></Button>
             </Grid>
         </Grid>
 
@@ -98,11 +98,9 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"></ColumnDefinition>
                         <ColumnDefinition Width="*"></ColumnDefinition>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <Label Grid.Column="0" HorizontalContentAlignment="Center" Content="Eigenes Spielfeld"></Label>
                     <Label Grid.Column="1" HorizontalContentAlignment="Center" Content="{Binding pu_OwnUsername, Mode=OneTime}" ></Label>
-                    <Label Grid.Column="2" HorizontalContentAlignment="Center" Content="{Binding pu_OwnShipsRemaining, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" ></Label>
                 </Grid>
                 
                 <Canvas Name="UpperGameField" Grid.Row="1" DragEnter="OwnGameField_DragEnter" Drop="OwnGameField_Drop"  AllowDrop="True" Background="White" PreviewMouseLeftButtonDown="GameField_PreviewMouseLeftButtonDown" PreviewMouseMove="GameField_PreviewMouseMove" DragOver="OwnGameField_DragOver">

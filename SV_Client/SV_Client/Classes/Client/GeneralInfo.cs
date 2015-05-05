@@ -16,6 +16,13 @@ namespace SV_Client.Classes.Client
             set { GeneralInfo.pr_Username = value; }
         }
 
+        private static string pr_EnemyUsername;
+        public static string pu_EnemyUsername
+        {
+            get { return GeneralInfo.pr_EnemyUsername; }
+            set { GeneralInfo.pr_EnemyUsername = value; }
+        }
+
         private static string pr_Password;
         public static string pu_Password
         {

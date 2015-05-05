@@ -77,6 +77,9 @@
     <Compile Include="Classes\ProgramLogic\User.cs" />
     <Compile Include="Classes\RelayCommand.cs" />
     <Compile Include="Classes\XmlSerializer.cs" />
+    <Compile Include="Dialog\InviteReceivedInputWindow.xaml.cs">
+      <DependentUpon>InviteReceivedInputWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Dialog\StartGameInputWindow.xaml.cs">
       <DependentUpon>StartGameInputWindow.xaml</DependentUpon>
     </Compile>
@@ -132,6 +135,10 @@
     <Compile Include="ViewModels\vm_LoginInterface.cs" />
     <Compile Include="ViewModels\vm_MainInterface.cs" />
     <Compile Include="ViewModels\vm_StartInterface.cs" />
+    <Page Include="Dialog\InviteReceivedInputWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Dialog\StartGameInputWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -584,3 +584,7 @@ I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserCo
 I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_LoginInterface.baml
 E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_LoginInterface.g.cs
 E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\UserControls\uc_LoginInterface.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Dialog\InviteReceivedInputWindow.baml
+E:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Dialog\InviteReceivedInputWindow.g.cs
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Dialog\InviteReceivedInputWindow.baml
+I:\Schiffe versenken\SchiffeVersenkenClient\SV_Client\SV_Client\obj\Debug\Dialog\InviteReceivedInputWindow.g.cs

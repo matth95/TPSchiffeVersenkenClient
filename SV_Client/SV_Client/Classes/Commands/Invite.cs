@@ -12,20 +12,12 @@ namespace SV_Client.Classes.Commands
     [XmlType(AnonymousType = true)]
     public class Invite
     {
-        private User _userToInvite;
+        private string _userToInvite;
 
-        public User UserToInvite
+        public string UserToInvite
         {
             get { return _userToInvite; }
             set { _userToInvite = value; }
         }
-
-        public string GameName
-        {
-            get { return _gameName; }
-            set { _gameName = value; }
-        }
-
-        private string _gameName;
     }
 }

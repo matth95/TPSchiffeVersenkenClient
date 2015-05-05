@@ -16,9 +16,9 @@ using System.Windows.Controls;
 
 namespace SV_Client.ViewModels
 {
-    public class vm_StartInterface
+    public class vm_StartInterface : UserControl
     {
-        // VARIABLEN
+        // VARIABLES
 
         private UdpClient pr_UDPServerReceivingStation;
         private UdpClient pr_UDPServerSendingStation;
@@ -45,20 +45,6 @@ namespace SV_Client.ViewModels
         {
             get { return pr_GameStartCommand; }
             set { pr_GameStartCommand = value; }
-        }
-
-        private RelayCommand pr_RankingCommand;
-        public RelayCommand pu_RankingCommand
-        {
-            get { return pr_RankingCommand; }
-            set { pr_RankingCommand = value; }
-        }
-
-        private RelayCommand pr_OptionCommand;
-        public RelayCommand pu_OptionCommand
-        {
-            get { return pr_OptionCommand; }
-            set { pr_OptionCommand = value; }
         }
 
         private RelayCommand pr_ExitCommand;
@@ -103,25 +89,31 @@ namespace SV_Client.ViewModels
             set { pr_PlayerListFocusCommand = value; }
         }
 
-        // KONSTRUKTOR
+        // CONSTRUCTOR
 
         public vm_StartInterface()
         {
             pr_UDPServerReceivePort = 40000;
             pr_UDPServerSendPort = 40001;
 
-            pr_UDPServerSendingStation = new UdpClient(pr_UDPServerSendPort, AddressFamily.InterNetwork);
+            try
+            {
+                pr_UDPServerSendingStation = new UdpClient(pr_UDPServerSendPort, AddressFamily.InterNetwork);
 
-            BackgroundWorker ReceiveDataWorker = new BackgroundWorker();
-            ReceiveDataWorker.DoWork += F_ReceiveDataFromServer;
-            ReceiveDataWorker.RunWorkerAsync();
+                BackgroundWorker ReceiveDataWorker = new BackgroundWorker();
+                ReceiveDataWorker.DoWork += F_ReceiveDataFromServer;
+                ReceiveDataWorker.RunWorkerAsync();
+            }
+            catch(SocketException)
+            {
+                MessageBox.Show("Sockets für den Datenaustausch mit dem Server werden bereits verwendet!");
+                // Application.Current.Shutdown();
+            }
 
             pr_AvailablePlayerList = new ObservableCollection<ListBoxItem>();
             pr_OpenGameList = new ObservableCollection<ListBoxItem>();
 
             pr_GameStartCommand = new RelayCommand(param => F_StartGame(this));
-            pr_RankingCommand = new RelayCommand(param => F_ShowRanking());
-            pr_OptionCommand = new RelayCommand(param => F_ShowOptions());
             pr_ExitCommand = new RelayCommand(param => F_ExitProgram());
             pr_RefreshCommand = new RelayCommand(param => F_RefreshHosts());
             pr_JoinCommand = new RelayCommand(param => F_JoinGame());
@@ -131,8 +123,14 @@ namespace SV_Client.ViewModels
         }
 
 
-        // FUNKTIONEN
+        // FUNCTIONS
 
+        /// <summary>
+        /// This function is called when the "Create Game" - button of the uc_Startinterface is pressed.
+        /// It creates a Dialog for the Input of the Gamename and then sends a put to the server with the
+        /// information about the game and the user that created it.
+        /// </summary>
+        /// <param name="source"></param>
         private void F_StartGame(object source)
         {
             var InputDialogObj = new SV_Client.Dialog.StartGameInputWindow();
@@ -147,21 +145,11 @@ namespace SV_Client.ViewModels
                 NewGame.User1 = CurrentUser;
                 F_SendDataToServer("PUT GAME\n\n" + XmlSerializer.Serialize<Game>(NewGame));
 
-
                 ViewModels.vm_MainInterface.pu_ChangeGUICommand.Execute(source);
             }
             else
             {
             }
-        }
-
-        private void F_ShowRanking()
-        {
-        }
-
-        private void F_ShowOptions()
-        {
-            MessageBox.Show("Options");
         }
 
         private void F_ExitProgram()
@@ -175,6 +163,10 @@ namespace SV_Client.ViewModels
             F_getPlayerList();
         }
 
+        /// <summary>
+        /// This function is called when a valid target from the GameList is selected and when the join button is pressed.
+        /// It sends a request to the server that asks to join the selected server.
+        /// </summary>
         private void F_JoinGame()
         {
             ListBoxItem JoinTarget = F_ReturnSelectedItemFrom(pr_OpenGameList);
@@ -197,13 +189,21 @@ namespace SV_Client.ViewModels
             }
         }
 
+        /// <summary>
+        /// This function is called when a valid target from the PlayerList is selected and when the invite button is pressed.
+        /// It sends a request to the server that asks for the selected player to be invited.
+        /// </summary>
         private void F_InvitePlayer()
         {
             ListBoxItem InviteTarget = F_ReturnSelectedItemFrom(pr_AvailablePlayerList);
 
             if (InviteTarget != null)
             {
-                MessageBox.Show(InviteTarget.Content.ToString());
+                User CurrentUser = new User(SV_Client.Classes.Client.GeneralInfo.pu_Username, SV_Client.Classes.Client.GeneralInfo.pu_Password);
+
+                Invite AvailableUser = new Invite();
+                AvailableUser.UserToInvite = InviteTarget.Content.ToString();
+                F_SendDataToServerAndReceive("POST INVITE\n\n" + XmlSerializer.Serialize<Invite>(AvailableUser));
             }
             else
             {
@@ -211,6 +211,11 @@ namespace SV_Client.ViewModels
             }
         }
 
+        /// <summary>
+        /// This function makes it so that you can not have Items selected in both the PlayerList and the GameList.
+        /// It is called whenever a new Item in either Player- or GameList is selected.
+        /// </summary>
+        /// <param name="SourceList"></param>
         private void F_ClearFocus(ObservableCollection<ListBoxItem> SourceList)
         {
             for (int lauf = 0; lauf < SourceList.Count; lauf++)
@@ -222,6 +227,11 @@ namespace SV_Client.ViewModels
             }
         }
 
+        /// <summary>
+        /// Returns the selected ListBoxItem.
+        /// </summary>
+        /// <param name="SourceList"></param>
+        /// <returns></returns>
         private ListBoxItem F_ReturnSelectedItemFrom(ObservableCollection<ListBoxItem> SourceList)
         {
             for (int lauf = 0; lauf < SourceList.Count; lauf++)
@@ -235,32 +245,60 @@ namespace SV_Client.ViewModels
             return null;
         }
 
-        private void F_SendDataToServerAndReceive(string DataToSend)
+        /// <summary>
+        /// This function sends the Data from the parameter to the server and waits afterwards for an answer 
+        /// to the data that was sent, which is then sent to the interpreter.
+        /// </summary>
+        /// <param name="DataToSend"></param>
+        public void F_SendDataToServerAndReceive(string DataToSend)
         {
-            IPEndPoint ServerEndPoint = new IPEndPoint(pr_UDPServerEndpoint.Address, pr_UDPServerSendPort);
-            var sendCode = Encoding.ASCII.GetBytes(DataToSend);
-            pr_UDPServerSendingStation.Connect(ServerEndPoint);
-            pr_UDPServerSendingStation.Send(sendCode, sendCode.Length);
-            var answer = Encoding.ASCII.GetString(pr_UDPServerSendingStation.Receive(ref ServerEndPoint));
-            F_InterpretDataFromServer(answer);
+            try
+            {
+                IPEndPoint ServerEndPoint = new IPEndPoint(pr_UDPServerEndpoint.Address, pr_UDPServerSendPort);
+                var sendCode = Encoding.ASCII.GetBytes(DataToSend);
+                pr_UDPServerSendingStation.Connect(ServerEndPoint);
+                pr_UDPServerSendingStation.Send(sendCode, sendCode.Length);
+                var answer = Encoding.ASCII.GetString(pr_UDPServerSendingStation.Receive(ref ServerEndPoint));
+                Console.WriteLine(answer);
+                F_InterpretDataFromServer(answer);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());  // proper Message + action
+            }
+            
         }
 
+        /// <summary>
+        /// This function sends the Data from the parameter to the server.
+        /// </summary>
+        /// <param name="DataToSend"></param>
         private void F_SendDataToServer(string DataToSend)
         {
-            IPEndPoint ServerEndPoint = new IPEndPoint(pr_UDPServerEndpoint.Address, pr_UDPServerSendPort);
-            var sendCode = Encoding.ASCII.GetBytes(DataToSend);
-            //TODO cgheck of connectedf
-            pr_UDPServerSendingStation.Connect(ServerEndPoint);
-            pr_UDPServerSendingStation.Send(sendCode, sendCode.Length);
+            try
+            {
+                IPEndPoint ServerEndPoint = new IPEndPoint(pr_UDPServerEndpoint.Address, pr_UDPServerSendPort);
+                var sendCode = Encoding.ASCII.GetBytes(DataToSend);
+                pr_UDPServerSendingStation.Connect(ServerEndPoint);
+                pr_UDPServerSendingStation.Send(sendCode, sendCode.Length);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());  // proper Message + action
+            }
         }
 
+        /// <summary>
+        /// This function is permanently checking for any data sent by the server in the background and
+        /// whenever it receives data it is sent to the interpreter.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void F_ReceiveDataFromServer(object sender, DoWorkEventArgs e)
         {
-
             pr_UDPServerReceivingStation = new UdpClient(pr_UDPServerReceivePort, AddressFamily.InterNetwork);
             pr_UDPServerEndpoint = new IPEndPoint(IPAddress.Any, 0);
             
-
             while (true)
             {
                 var receivedData = pr_UDPServerReceivingStation.Receive(ref pr_UDPServerEndpoint);
@@ -271,6 +309,11 @@ namespace SV_Client.ViewModels
            
         }
 
+        /// <summary>
+        /// This function interprets the data received over the parameter and executes further code 
+        /// depending on the received data.
+        /// </summary>
+        /// <param name="DataToInterpret"></param>
         private void F_InterpretDataFromServer(string DataToInterpret)
         {
             var DataToInterpretSplitted = DataToInterpret.Split(new[] { "\n\n" }, StringSplitOptions.None);
@@ -310,14 +353,47 @@ namespace SV_Client.ViewModels
                     for (var lauf = 0; lauf < CurrentPlayerList.OnlineUsers.Count; lauf++)
                     {
                         pr_AvailablePlayerList.Add(new ListBoxItem());
-                        pr_AvailablePlayerList[lauf].Content = CurrentPlayerList.OnlineUsers[lauf];
+                        if (CurrentPlayerList.OnlineUsers[lauf].Username != SV_Client.Classes.Client.GeneralInfo.pu_Username)
+                        {
+                            pr_AvailablePlayerList[lauf].Content = CurrentPlayerList.OnlineUsers[lauf].Username;
+                        }
                     }
                 }));
                 
             }
-            else if ( DataToInterpretHeader.Split('\n')[0].IndexOf("RANKING") > 0 )
+            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("RESPONSE SUCCESS LOGIN") > 0)
             {
-                var RankingList = Classes.XmlSerializer.Deserialize<Ranking>(DataToInterpretSplitted[1]);
+                ViewModels.vm_MainInterface.pu_ChangeGUICommand.Execute(this);
+            }
+            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("RESPONSE FAIL") > 0)
+            {
+                MessageBox.Show("Username oder Password falsch! bzw. User nicht vorhanden!");
+            }
+            else if( DataToInterpretHeader.Split('\n')[0].IndexOf("INVITE FAIL") > 0)
+            {
+                MessageBox.Show("Gegenüber hat Einladung abgelehnt!");
+            }
+            else if( DataToInterpretHeader.Split('\n')[0].IndexOf("INVITE SUCCESS") > 0)
+            {
+                ViewModels.vm_MainInterface.pu_ChangeGUICommand.Execute(this);
+            }
+            else if( DataToInterpretHeader.Split('\n')[0].IndexOf("INVITE") > 0)
+            {
+                var InputDialogObj = new SV_Client.Dialog.InviteReceivedInputWindow();
+                var GameInputDialog = InputDialogObj.ShowDialog();
+
+                User CurrentUser = new User(SV_Client.Classes.Client.GeneralInfo.pu_Username, SV_Client.Classes.Client.GeneralInfo.pu_Password);
+
+                if (GameInputDialog.Value)
+                {
+                    F_SendDataToServer("ACCEPT INVITE\n\n" + XmlSerializer.Serialize<User>(CurrentUser));
+
+                    ViewModels.vm_MainInterface.pu_ChangeGUICommand.Execute(this);
+                }
+                else
+                {
+                    F_SendDataToServer("DECLINE INVITE\n\n" + XmlSerializer.Serialize<User>(CurrentUser));
+                }
             }
         }
 

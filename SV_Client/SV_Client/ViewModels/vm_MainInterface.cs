@@ -40,8 +40,8 @@ namespace SV_Client.ViewModels
             }
         }
 
-        private static UserControls.uc_StartInterface pr_uc_StartContent;
-        private static UserControls.uc_LoginInterface pr_uc_LoginContent;
+        public static UserControls.uc_StartInterface pu_uc_StartContent;
+        public static UserControls.uc_LoginInterface pu_uc_LoginContent;
 
         private static UserControls.uc_GameInterface pr_uc_GameContent;
         public static UserControls.uc_GameInterface pu_uc_GameContent
@@ -55,10 +55,10 @@ namespace SV_Client.ViewModels
         public vm_MainInterface()
         {
             pu_ActiveContent = new UserControl();
-            pr_uc_StartContent = new UserControls.uc_StartInterface();
-            pr_uc_LoginContent = new UserControls.uc_LoginInterface();
+            pu_uc_StartContent = new UserControls.uc_StartInterface();
+            pu_uc_LoginContent = new UserControls.uc_LoginInterface();
 
-            pr_ActiveContent = pr_uc_LoginContent;
+            pr_ActiveContent = pu_uc_LoginContent;
 
             pr_ChangeGUICommand = new RelayCommand(param => F_GameStart());
             pr_ExitCommand = new RelayCommand(param => F_ExitProgram());
@@ -76,20 +76,24 @@ namespace SV_Client.ViewModels
             }
         }
 
+        /// <summary>
+        /// This function changes the current overlay depending on which one is active at the time
+        /// that it is called.
+        /// </summary>
         private void F_GameStart()
         {
-            if( pu_ActiveContent == pr_uc_StartContent)
+            if( pu_ActiveContent == pu_uc_StartContent)
             {
                 pr_uc_GameContent = new UserControls.uc_GameInterface();
                 pu_ActiveContent = pr_uc_GameContent;
             }
-            else if( pu_ActiveContent == pr_uc_LoginContent)
+            else if( pu_ActiveContent == pu_uc_LoginContent)
             {
-                pu_ActiveContent = pr_uc_StartContent;
+                pu_ActiveContent = pu_uc_StartContent;
             }
             else
             {
-                pu_ActiveContent = pr_uc_StartContent;
+                pu_ActiveContent = pu_uc_StartContent;
             }
             
         }

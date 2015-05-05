@@ -107,7 +107,7 @@ namespace SV_Client.ViewModels
             catch(SocketException)
             {
                 MessageBox.Show("Sockets für den Datenaustausch mit dem Server werden bereits verwendet!");
-                // Application.Current.Shutdown();
+                Application.Current.Shutdown();
             }
 
             pr_AvailablePlayerList = new ObservableCollection<ListBoxItem>();
@@ -264,7 +264,8 @@ namespace SV_Client.ViewModels
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.ToString());  // proper Message + action
+                MessageBox.Show("Ein Problem mit der Verbindung zum Server ist aufgetreten!");
+                Application.Current.Shutdown();
             }
             
         }
@@ -284,7 +285,8 @@ namespace SV_Client.ViewModels
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.ToString());  // proper Message + action
+                MessageBox.Show("Ein Problem mit der Verbindung zum Server ist aufgetreten!");
+                Application.Current.Shutdown();
             }
         }
 

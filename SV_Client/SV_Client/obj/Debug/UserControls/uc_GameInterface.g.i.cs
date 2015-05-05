@@ -193,13 +193,13 @@ namespace SV_Client.UserControls {
             #line hidden
             
             #line 106 "..\..\..\UserControls\uc_GameInterface.xaml"
-            this.UpperGameField.PreviewMouseLeftButtonDown += new System.Windows.Input.MouseButtonEventHandler(this.GameField_PreviewMouseLeftButtonDown);
+            this.UpperGameField.PreviewMouseLeftButtonDown += new System.Windows.Input.MouseButtonEventHandler(this.OwnGameField_PreviewMouseLeftButtonDown);
             
             #line default
             #line hidden
             
             #line 106 "..\..\..\UserControls\uc_GameInterface.xaml"
-            this.UpperGameField.PreviewMouseMove += new System.Windows.Input.MouseEventHandler(this.GameField_PreviewMouseMove);
+            this.UpperGameField.PreviewMouseMove += new System.Windows.Input.MouseEventHandler(this.OwnGameField_PreviewMouseMove);
             
             #line default
             #line hidden

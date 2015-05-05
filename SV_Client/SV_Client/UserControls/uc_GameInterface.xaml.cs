@@ -105,6 +105,9 @@ namespace SV_Client.UserControls
 
         //FUNCTIONS FOR COMMUNICATION WITH SERVER
 
+        /// <summary>
+        /// This function initializes the components necessary for the communication with the server
+        /// </summary>
         private void F_SetupServerConnection()
         {
             try 
@@ -124,11 +127,17 @@ namespace SV_Client.UserControls
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.ToString()); // proper Message + action
+                MessageBox.Show("Ein Problem mit der Verbindung zum Server ist aufgetreten!");
             }
             
         }
 
+        /// <summary>
+        /// This function is working in the background and it waites for data from the server, when it
+        /// receives data it weill send the data to the interpreter.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void F_ReceiveDataFromServer(object sender, DoWorkEventArgs e)
         {
             while (true)
@@ -145,6 +154,10 @@ namespace SV_Client.UserControls
             }
         }
 
+        /// <summary>
+        /// This function interprets the data it receives in the parameter and executes actions accordingly.
+        /// </summary>
+        /// <param name="DataToInterpret"></param>
         private void F_InterpretDataFromServer(string DataToInterpret)
         {
             var DataToInterpretSplitted = DataToInterpret.Split(new[] { "\n\n" }, StringSplitOptions.None);
@@ -198,6 +211,11 @@ namespace SV_Client.UserControls
             }
         }
 
+        /// <summary>
+        /// This function sends the Data from the parameter to the server and waits afterwards for an answer 
+        /// to the data that was sent, which is then sent to the interpreter.
+        /// </summary>
+        /// <param name="DataToSend"></param>
         private void F_SendDataToServerAndReceive(string DataToSend)
         {
             try
@@ -213,11 +231,16 @@ namespace SV_Client.UserControls
             }
             catch(Exception ex)
             {
-                // message
+                MessageBox.Show("Ein Problem mit der Verbindung zum Server ist aufgetreten!");
+                Application.Current.Shutdown();
             }
             
         }
 
+        /// <summary>
+        /// This function sends the Data from the parameter to the server.
+        /// </summary>
+        /// <param name="DataToSend"></param>
         private void F_SendDataToServer(string DataToSend)
         {
             try
@@ -227,10 +250,15 @@ namespace SV_Client.UserControls
             }
             catch(Exception ex)
             {
-                // message
+                MessageBox.Show("Ein Problem mit der Verbindung zum Server ist aufgetreten!");
+                Application.Current.Shutdown();
             }
         }
 
+        /// <summary>
+        /// This function is called when the player gives up. It sends a "surrender" to the server and closes
+        /// the TCP connection.
+        /// </summary>
         private void F_EndServerConnection()
         {
             try
@@ -244,7 +272,8 @@ namespace SV_Client.UserControls
             }
             catch(Exception ex)
             {
-                // message
+                MessageBox.Show("Ein Problem mit der Verbindung zum Server ist aufgetreten!");
+                Application.Current.Shutdown();
             }
         }
 
@@ -252,10 +281,15 @@ namespace SV_Client.UserControls
 
         private void ViewList_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            //MessageBox.Show(e.Source.ToString()); // bug danebn clickn
-            pr_StartPoint = e.GetPosition(null);
-            pr_OriginalElement = (UIElement)e.Source;
-            pr_SourceGrid = (sender as Grid);
+            if( e.Source != null)
+            {
+                pr_StartPoint = e.GetPosition(null);
+                pr_OriginalElement = (UIElement)e.Source;
+                pr_SourceGrid = (sender as Grid);
+            }
+            else
+            {
+            }
         }
 
         private void ViewList_PreviewMouseMove(object sender, MouseEventArgs e)
@@ -351,11 +385,10 @@ namespace SV_Client.UserControls
         }
 
         /// <summary>
-        /// /////////////////////////////////////////////////////////////////////////
+        /// This function locks the fields on which a ship is placed.
         /// </summary>
         /// <param name="FieldIndex"></param>
         /// <param name="Ship"></param>
-
         private void F_LockShipFields(int FieldIndex, UIElement Ship)
         {
             int ShipSize = F_getShipSize(Ship);
@@ -380,6 +413,11 @@ namespace SV_Client.UserControls
             }
         }
 
+        /// <summary>
+        /// This function releases the fields on which a ship is placed in case of removal or moving
+        /// </summary>
+        /// <param name="FieldIndex"></param>
+        /// <param name="Ship"></param>
         private void F_ReleaseShipFields(int FieldIndex, UIElement Ship)
         {
             int ShipSize = F_getShipSize(Ship);
@@ -404,6 +442,17 @@ namespace SV_Client.UserControls
             }
         }
 
+        /// <summary>
+        /// This function checks if a ship is placable on certain coordinates.
+        /// </summary>
+        /// <param name="XCoordinate"></param>
+        /// <param name="YCoordinate"></param>
+        /// <param name="ShipSize"></param>
+        /// <param name="Ship"></param>
+        /// <returns>
+        ///     false if the ship is not placeable on the field
+        ///     true if the ship is placeable on the field
+        /// </returns>
         private bool F_CheckShipPlaceability(int XCoordinate, int YCoordinate, int ShipSize, UIElement Ship)
         {
             if( pr_ModifyShip == true)
@@ -460,7 +509,7 @@ namespace SV_Client.UserControls
             }
         }
 
-        private void GameField_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void OwnGameField_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             if (e.Source.GetType().ToString().Equals("System.Windows.Controls.Canvas"))
             {
@@ -510,7 +559,7 @@ namespace SV_Client.UserControls
             }
         }
 
-        private void GameField_PreviewMouseMove(object sender, MouseEventArgs e)
+        private void OwnGameField_PreviewMouseMove(object sender, MouseEventArgs e)
         {
             Point mousePos = e.GetPosition(null);
             Vector diff = pr_StartPoint - mousePos;
@@ -560,6 +609,12 @@ namespace SV_Client.UserControls
 
         }
 
+        /// <summary>
+        /// When all ships are placed this function can be called by pressing the ready button, it sends the
+        /// list of ships to the server and removes the possibility to modify the position of the ships.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ReadyClick(object sender, RoutedEventArgs e)
         {
             if (pr_AmountOfShips == 0)
@@ -622,6 +677,12 @@ namespace SV_Client.UserControls
 
         // FUNCTIONS FOR SUPPORT OF ANIMATION, ACTION AND FUNCTION FOR SCALING
 
+        /// <summary>
+        /// This function converts coordinates to a listindex.
+        /// </summary>
+        /// <param name="XCoordinate"></param>
+        /// <param name="YCoordinate"></param>
+        /// <returns></returns>
         private int F_XYConvert(int XCoordinate, int YCoordinate)
         {
             int FieldIndex = 0;
@@ -632,6 +693,12 @@ namespace SV_Client.UserControls
             return FieldIndex;
         }
 
+        /// <summary>
+        /// This function creates a copy of the original rectangle and rotates it if necessary either
+        /// horizontally or vertically.
+        /// </summary>
+        /// <param name="original"></param>
+        /// <returns></returns>
         private Rectangle F_getCopyOfOriginal(Rectangle original)
         {
             Rectangle Copy = new Rectangle();
@@ -673,6 +740,12 @@ namespace SV_Client.UserControls
             }
         }
 
+        /// <summary>
+        /// This function is called when the window size changes and it updates values necessary for the
+        /// calculation of scaling.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void F_ScaleInfoUpdate(object sender, SizeChangedEventArgs e)
         {
             pr_ScaleWidth = ViewModels.vm_GameInterface.pustat_ScaleWidth;
@@ -680,6 +753,10 @@ namespace SV_Client.UserControls
             F_AdaptFields();
         }
 
+        /// <summary>
+        /// This function initializes a "logical" grid on the canvas. This grid is not visible and serves
+        /// solely for the calculation of positions on the canvas.
+        /// </summary>
         private void F_InitializeFields()
         {
             double AdditiveOnX = 40;
@@ -695,6 +772,9 @@ namespace SV_Client.UserControls
             }
         }
 
+        /// <summary>
+        /// This function adapts the "logical" grid to the current scaling of the window.
+        /// </summary>
         private void F_AdaptFields()
         {
             double AdditiveOnX = 40 * pr_ScaleWidth;
@@ -710,6 +790,15 @@ namespace SV_Client.UserControls
             }
         }
 
+        /// <summary>
+        /// This function calculates over which "logical" field the mouse is.
+        /// </summary>
+        /// <param name="X"></param>
+        /// <param name="Y"></param>
+        /// <param name="GameField"></param>
+        /// <returns>
+        ///     An index of a "logical" field is returned.
+        /// </returns>
         private int F_CheckField(double X, double Y, List<Field> GameField)
         {
             for (var lauf = 0; lauf < 10; lauf++)
@@ -727,6 +816,15 @@ namespace SV_Client.UserControls
             return -1;
         }
 
+        /// <summary>
+        /// This function calculates over which "logical" field the mouse is.
+        /// </summary>
+        /// <param name="X"></param>
+        /// <param name="Y"></param>
+        /// <param name="GameField"></param>
+        /// <returns>
+        ///     An array with the X and Y coordinates of the "logical" field is returned
+        /// </returns>
         private int[] F_CheckFieldForXY(double X, double Y, List<Field> GameField)
         {
             int[] XandY = new int[2];
@@ -753,6 +851,16 @@ namespace SV_Client.UserControls
             return error;
         }
 
+        /// <summary>
+        /// Checks if the fields at the given parameters are already in use.
+        /// </summary>
+        /// <param name="FieldIndex"></param>
+        /// <param name="ShipSize"></param>
+        /// <param name="ShipDirection"></param>
+        /// <returns>
+        ///     false if fields are already in use
+        ///     true if the ship is placeable
+        /// </returns>
         private bool F_CheckIfShipPlaceable(int FieldIndex, int ShipSize, bool ShipDirection)
         {
             if( ShipDirection == false )
@@ -779,6 +887,14 @@ namespace SV_Client.UserControls
             return true;
         }
 
+        /// <summary>
+        /// This function places a ship on the given index if the situation allows it.
+        /// </summary>
+        /// <param name="FieldIndex"></param>
+        /// <param name="Ship"></param>
+        /// <param name="BattleField"></param>
+        /// <param name="GameField"></param>
+        /// <param name="XandY"></param>
         private void F_PlaceShipOn(int FieldIndex, UIElement Ship, Canvas BattleField, List<Field> GameField, int[] XandY)
         {
             bool ShipDirection = F_getShipDirection(Ship);
@@ -867,7 +983,6 @@ namespace SV_Client.UserControls
                 }
                 else
                 {
-                    //MessageBox.Show("Schiff kann nicht auf dieses Feld gesetzt werden!");
                 }
             }
             else
@@ -955,11 +1070,17 @@ namespace SV_Client.UserControls
                 }
                 else
                 {
-                    //MessageBox.Show("Schiff kann nicht auf dieses Feld gesetzt werden!");
                 }
             }
         }
 
+        /// <summary>
+        /// This function previews the placement of the ship.
+        /// </summary>
+        /// <param name="FieldIndex"></param>
+        /// <param name="Ship"></param>
+        /// <param name="BattleField"></param>
+        /// <param name="GameField"></param>
         private void F_PreviewShipOn(int FieldIndex, UIElement Ship, Canvas BattleField, List<Field> GameField)
         {
             if (pr_ModifyShip == true)
@@ -991,7 +1112,6 @@ namespace SV_Client.UserControls
                 }
                 else
                 {
-                    //MessageBox.Show("Schiff kann nicht auf dieses Feld gesetzt werden!");
                 }
             }
             else
@@ -1021,21 +1141,37 @@ namespace SV_Client.UserControls
                 }
                 else
                 {
-                    //MessageBox.Show("Schiff kann nicht auf dieses Feld gesetzt werden!");
                 }
             }
         }
 
+        /// <summary>
+        /// This function locks a field.
+        /// </summary>
+        /// <param name="FieldIndex"></param>
+        /// <param name="GameField"></param>
         private void F_LockSpace(int FieldIndex, List<Field> GameField)
         {
             GameField.ElementAt(FieldIndex).pu_OpenSpace = false;
         }
 
+        /// <summary>
+        /// This function releases a field that is locked.
+        /// </summary>
+        /// <param name="FieldIndex"></param>
+        /// <param name="GameField"></param>
         private void F_ReleaseSpace(int FieldIndex, List<Field> GameField)
         {
             GameField.ElementAt(FieldIndex).pu_OpenSpace = true;
         }
 
+        /// <summary>
+        /// This function calculates the size of the ship given in the parameter.
+        /// </summary>
+        /// <param name="Ship"></param>
+        /// <returns>
+        ///     Integer that represents size of a ship
+        /// </returns>
         private int F_getShipSize(UIElement Ship)
         {
             Rectangle rShip = (Ship as Rectangle);
@@ -1084,6 +1220,14 @@ namespace SV_Client.UserControls
             return -1;
         }
 
+        /// <summary>
+        /// This function calculates the direction of the ship given in the parameter.
+        /// </summary>
+        /// <param name="Ship"></param>
+        /// <returns>
+        ///     false if the ship has horizontal direction.
+        ///     true if the ship has vertical direction.
+        /// </returns>
         private bool F_getShipDirection(UIElement Ship)
         {
             Rectangle rShip = (Ship as Rectangle);
@@ -1100,6 +1244,11 @@ namespace SV_Client.UserControls
             return false;
         }
 
+        /// <summary>
+        /// Calculates the index of the ship in the shiplist
+        /// </summary>
+        /// <param name="Ship"></param>
+        /// <returns></returns>
         private int F_getShipIndex(UIElement Ship)
         {
             for( var lauf = 0 ; lauf < pr_ShipList.Ships.Count ; lauf++ )
@@ -1113,9 +1262,15 @@ namespace SV_Client.UserControls
             return -1;
         }
 
+        /// <summary>
+        /// Places an attack on the given index.
+        /// </summary>
+        /// <param name="FieldIndex"></param>
+        /// <param name="Attack"></param>
+        /// <param name="BattleField"></param>
+        /// <param name="GameField"></param>
         private void F_PlaceAttackOn(int FieldIndex, UIElement Attack, Canvas BattleField, List<Field> GameField)
         {
-            //MessageBox.Show("" + FieldIndex);
             if ( GameField.ElementAt(FieldIndex).pu_OpenSpace )
             {
                 double XCoordinate = 0;

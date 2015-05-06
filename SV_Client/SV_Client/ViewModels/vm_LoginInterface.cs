@@ -66,8 +66,6 @@ namespace SV_Client.ViewModels
                     var CurrentStartInterface = ViewModels.vm_MainInterface.pu_uc_StartContent.DataContext as vm_StartInterface;
 
                     CurrentStartInterface.F_SendDataToServerAndReceive("POST LOGIN\n\n" + XmlSerializer.Serialize<User>(TryLoginUser));
-
-                    vm_MainInterface.pu_ChangeGUICommand.Execute(source); // only for test
                 }
                 else
                 {

@@ -321,12 +321,12 @@ namespace SV_Client.ViewModels
             var DataToInterpretSplitted = DataToInterpret.Split(new[] { "\n\n" }, StringSplitOptions.None);
             string DataToInterpretHeader = DataToInterpretSplitted[0];
 
-            if (DataToInterpretHeader.Split('\n')[0].IndexOf("ONLINE") > 0)
+            if (DataToInterpretHeader.Split('\n')[0].IndexOf("ONLINE") >= 0)
             {
                 F_getGameList();
                 F_getPlayerList();
             }
-            else if ( DataToInterpretHeader.Split('\n')[0].IndexOf("GAMELIST") > 0 )
+            else if ( DataToInterpretHeader.Split('\n')[0].IndexOf("GAMELIST") >= 0 )
             {
                 try
                 {
@@ -346,7 +346,7 @@ namespace SV_Client.ViewModels
                     Console.WriteLine(ex);
                 }
             }
-            else if ( DataToInterpretHeader.Split('\n')[0].IndexOf("PLAYERLIST") > 0 )
+            else if ( DataToInterpretHeader.Split('\n')[0].IndexOf("PLAYERLIST") >= 0 )
             {
                 var CurrentPlayerList = Classes.XmlSerializer.Deserialize<PlayerList>(DataToInterpretSplitted[1]);
 
@@ -363,23 +363,27 @@ namespace SV_Client.ViewModels
                 }));
                 
             }
-            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("RESPONSE SUCCESS LOGIN") > 0)
+            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("RESPONSE SUCCESS LOGIN") >= 0)
             {
                 ViewModels.vm_MainInterface.pu_ChangeGUICommand.Execute(this);
             }
-            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("RESPONSE FAIL") > 0)
+            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("RESPONSE SUCCESS REGISTER") >= 0)
+            {
+                ViewModels.vm_MainInterface.pu_ChangeGUICommand.Execute(this);
+            }
+            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("RESPONSE FAIL") >= 0)
             {
                 MessageBox.Show("Username oder Password falsch! bzw. User nicht vorhanden!");
             }
-            else if( DataToInterpretHeader.Split('\n')[0].IndexOf("INVITE FAIL") > 0)
+            else if( DataToInterpretHeader.Split('\n')[0].IndexOf("INVITE FAIL") >= 0)
             {
                 MessageBox.Show("Gegenüber hat Einladung abgelehnt!");
             }
-            else if( DataToInterpretHeader.Split('\n')[0].IndexOf("INVITE SUCCESS") > 0)
+            else if( DataToInterpretHeader.Split('\n')[0].IndexOf("INVITE SUCCESS") >= 0)
             {
                 ViewModels.vm_MainInterface.pu_ChangeGUICommand.Execute(this);
             }
-            else if( DataToInterpretHeader.Split('\n')[0].IndexOf("INVITE") > 0)
+            else if( DataToInterpretHeader.Split('\n')[0].IndexOf("INVITE") >= 0)
             {
                 var InputDialogObj = new SV_Client.Dialog.InviteReceivedInputWindow();
                 var GameInputDialog = InputDialogObj.ShowDialog();

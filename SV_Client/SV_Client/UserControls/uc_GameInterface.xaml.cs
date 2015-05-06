@@ -163,7 +163,7 @@ namespace SV_Client.UserControls
             var DataToInterpretSplitted = DataToInterpret.Split(new[] { "\n\n" }, StringSplitOptions.None);
             string DataToInterpretHeader = DataToInterpretSplitted[0];
 
-            if (DataToInterpretHeader.Split('\n')[0].IndexOf("START") > 0)
+            if (DataToInterpretHeader.Split('\n')[0].IndexOf("START") >= 0)
             {
                 var Parameters = DataToInterpretSplitted[0].Split(null); 
 
@@ -178,15 +178,15 @@ namespace SV_Client.UserControls
 
                 pr_GameStarted = true;
             }
-            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("ATTACK MISS") > 0)
+            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("ATTACK MISS") >= 0)
             {
                 pr_AttackHitMiss = false;
             }
-            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("ATTACK HIT") > 0)
+            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("ATTACK HIT") >= 0)
             {
                 pr_AttackHitMiss = true;
             }
-            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("ATTACK ON") > 0)
+            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("ATTACK ON") >= 0)
             {
                 var Parameters = XmlSerializer.Deserialize<Attack>(DataToInterpretSplitted[1]);
 
@@ -194,17 +194,17 @@ namespace SV_Client.UserControls
 
                 F_PlaceAttackOn(FieldIndex, new Graphic.Hit(), pr_OwnCanvas, pr_OwnGameFields);
             }
-            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("SHIP DESTROYED") > 0)
+            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("SHIP DESTROYED") >= 0)
             {
                 pr_AmountOfEnemyShips--;
                 ViewModels.vm_GameInterface.pustat_AmountsOfEnemyShips--;
             }
-            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("END WIN") > 0)
+            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("END WIN") >= 0)
             {
                 MessageBox.Show("Sie haben das Spiel gewonnen!");
                 ViewModels.vm_MainInterface.pu_ChangeGUICommand.Execute(this);
             }
-            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("END LOSE") > 0)
+            else if (DataToInterpretHeader.Split('\n')[0].IndexOf("END LOSE") >= 0)
             {
                 MessageBox.Show("Sie haben das Spiel verloren!");
                 ViewModels.vm_MainInterface.pu_ChangeGUICommand.Execute(this);
